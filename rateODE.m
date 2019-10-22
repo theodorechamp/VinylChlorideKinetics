@@ -5,7 +5,8 @@ function rates = rateODE(pp, k) %pp is a vector of all partial pressures, k is a
 rates(1) = k(1) * pp(1) * pp(6)^0.5;
 rates(2) = k(2) * pp(7) * pp(6)^0.5;
 rates(3) = k(3) * pp(1) * pp(3) * pp.(6)^0.5;
-rates(4) = k(4) * pp(3) / pp(6);
+rates(4) = k(4) * pp(3) / pp(6); % rate of forward reaction in the reversible reaction
+rates(5) = 1; % rate of reverse reaction in the reversible reaction
 
 % 1 = c2h4
 % 2 = hcl
