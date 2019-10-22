@@ -2,19 +2,19 @@
 
 This serves as a repository for Group #7 in CHEN 4530 (Design) at CU Boulder 
 
-Group #7 consists of 
-Annika Lai, Grand Supreme Leader
-Jason Desveaux, Junior to the Grand Supreme Leader
-Theodore Champ
-Matt Bedeaux 
-Lena Chavez
+Group #7 consists of <br>
+Annika Lai, Grand Supreme Leader <br>
+Jason Desveaux, Junior to the Grand Supreme Leader<br>
+Theodore Champ<br>
+Matt Bedeaux <br>
+Lena Chavez<br>
 
 ## Documentation
 
 The vector *pp* is vector of partial pressures of species at this moment.
-The entries of pp are below:
-pp(1) = c2h4
-pp(2) = hcl
+The entries of pp are below: <br>
+pp(1) = c2h4<br>
+pp(2) = hcl<br>
 pp(3) = o2
 pp(4) = 1,1,2-trichloroethane
 pp(5) = co2
