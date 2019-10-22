@@ -28,3 +28,11 @@ Index values align with drawn flowchart on google docs
 The vector *rates* has the rate of each reaction at that step, given in 
 mols per unit time. The indexes agree with the flowchart. 
 Ex. r(1) is the rate of equation 1 (C2H4+HCl)
+
+
+TODO
+
+[] Write main.m
+[] Species balance
+[] IGL (Its own function or just write it each time?)
+[] Energy Balance
