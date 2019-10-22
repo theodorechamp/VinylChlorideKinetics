@@ -1,4 +1,4 @@
-function dTdV = energyBal(Hrxn,delCp,rates,Tlast,comp,Cp,dV)
+function dTdV = energyBal(Htot,rates,Tlast,comp,Cp,dV)
 
 term1 = 0;
 
