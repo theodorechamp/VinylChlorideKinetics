@@ -1,4 +1,4 @@
-function dTdV = energyBal(Htot,rates,Tlast,comp,Cp,dV)
+function dTdV = energyBal(Htot,rates,Tlast,n_tot_flow,Cp,dV)
 
 term1 = 0;
 
@@ -15,7 +15,7 @@ term2 = U * dV * 4 / D * (Tlast - Tinf);
 
 term3 = 0;
 for i = 1:Length(comp)
-    term3 = term3 + comp(i)*Cp(i);
+    term3 = term3 + n_tot_flow(i)*Cp(i);
 end
 
 dTdV = (term1 - term2) / term3;
