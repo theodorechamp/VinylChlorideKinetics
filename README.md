@@ -5,7 +5,7 @@ This serves as a repository for Group #7 in CHEN 4530 (Design) at CU Boulder
 Group #7 consists of 
 Annika Lai, Grand Supreme Leader
 Jason Desveaux, Junior to the Grand Supreme Leader
-Theo Champ
+Theodore Champ
 Matt Bedeaux 
 Lena Chavez
 
