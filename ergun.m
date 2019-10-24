@@ -1,7 +1,8 @@
-function dPdV = ergun(T,P_t,D,Lr)
+function dPdV = ergun(T,P_t)
 
-mflow = 75000; % kmol/hr using a guess based on the Aspen simulation! 
-D = 0.0254; %just an initial guess!!!) units of meters, AKA 1" 
+mflow = 75000; % kmol/hr using a guess based on the Aspen simulation
+Lr = 1; %Look into reactor length
+D = 0.0254; 
 Dp = D/8; %Using heuristic Weimer gave in class on 10/10/19 that particle diameter should be 1/8 of tube diameter
 G0 = mflow/(pi*D^2/4);
 Ac = D * pi;
