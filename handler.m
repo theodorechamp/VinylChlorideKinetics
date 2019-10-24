@@ -18,7 +18,7 @@ for i = 1:Length(molFracs)
     molFracs(i) = nflow(i)/nflowTot;
 end
 
-%calculate partial pressures
+%calculate partial pressures with Daltons law
 pp = [0,0,0,0,0,0,0,0]; 
 for i = 1:Length(pp) 
     pp(i) = molFracs(i) * P_t;

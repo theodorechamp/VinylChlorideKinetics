@@ -42,4 +42,7 @@ M = [ 1     0     0     0     0     0     0     0     0     0     0     0     0 
       0     0     0     0     0     0     0     0     0     0     0     0     0     0     1     0;
       0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     1;];
  
-options = odeset("Mass",M);
+options = odeset('Mass',M);
+[ v, ysoln ] = ode45(handleranon,vspan,y0,options);
+
+
