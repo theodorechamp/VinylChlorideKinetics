@@ -22,7 +22,11 @@ y0 = {nflowinit,Tin,Pin};
 
 handleranon = @(v,y) handler(v,y,rates,phi);
 
-M = [
-
-
-
+%Mass Matrix (I have no idea if this is right, just matched number of
+%outvars in Cloughs shit
+M = [1 0 0 0 ;
+     0 1 0 0 ;
+     0 0 1 0 ;
+     0 0 0 1 ;];
+ 
+options = odeset("Mass",M);

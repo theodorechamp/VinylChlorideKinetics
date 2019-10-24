@@ -5,6 +5,7 @@ nflow = y(1);
 T = y(2);
 P = y(3);
 TotFlow = 0;
+
 for i = 1:y(1)
     
 end
