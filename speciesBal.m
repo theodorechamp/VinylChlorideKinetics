@@ -9,6 +9,7 @@ dF6dVt = (2*rates(4)) * (1-phi);
 dF7dVt = (rates(1) - 1*rates(2)) * (1-phi);
 dF8dVt = (rates(1) + rates(2) + 2*rates(3) + 2*rates(4)) * (1-phi);
 
+speciesBal = [dF1dVt, dF2dVt, dF3dVt, dF4dVt, dF5dVt, dF6dVt, dF7dVt, dF8dVt];
 
 % 1 = c2h4
 % 2 = hcl
