@@ -12,15 +12,16 @@ Vr = 1.414*10^-3;%m3
 Lr = 3; % m
 nflowinit = [100,100,100,0,0,0,0,0]; %Same indices as pp
 phi = .4;
+MW = [28.05, 36.46, 16.00, 133.4, 44.01, 70.9, 98.96, 18.02 ];
 
 %%%%%%%%%
 % Logic %
 %%%%%%%%%
 vspan = linspace(0, Vr, 200);
 %Loading Dependent variables
-y0 = {nflowinit,Tin,Pin};
+y0 = [nflowinit(1) nflowinit(2) nflowinit(3) nflowinit(4) nflowinit(5) nflowinit(6) nflowinit(7) nflowinit(8) Tin Pin];
 
-handleranon = @(v,y) handler(v,y,rates,phi);
+handleranon = @(v,y) handler(v,y,rates,phi, MW);
 
 %Mass Matrix (I have no idea if this is right, just assuming all diff eqs
 %for now.)
