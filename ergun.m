@@ -1,11 +1,15 @@
-function dPdV = ergun(T,P_t, MW, nflow)
+function dPdV = ergun(T,pp, MW, nflow)
+R = 8.3144621; %L kPa K?1 mol?1 
+rho = [0,0,0,0,0,0,0,0];
+for i = 1:Length(nflow)
+    rho(i) = pp(i)*MW(i)/(T*R);
+end
 
 mflowTot = 0; % mol/hr 
 for i = 1:Length(MW)
     mflowTot = nflow(i)*MW(i);
 end
 
-Lr = 1; %Look into reactor length
 D = 0.0254; 
 Dp = D/8; %Using heuristic Weimer gave in class on 10/10/19 that particle diameter should be 1/8 of tube diameter
 G0 = mflowTot/(pi*D^2/4);
