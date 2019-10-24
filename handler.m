@@ -25,7 +25,7 @@ for i = 1:Length(pp)
 end
 
 
-outvar(1) = rateODE(%pp, k);
+outvar(1) = rateODE(pp);
 
 outvar(2) = energyBal(Htot, rates, T, molFracs, Cp, dV);
 
