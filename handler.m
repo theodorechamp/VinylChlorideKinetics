@@ -10,13 +10,13 @@ for i = 1:y(1)
     
 end
 
-outvar(1) = rateODE();
+outvar(1) = rateODE(%pp, k);
 
 outvar(2) = energyBal(Htot, rates, T, n_tot_flow, Cp, dV);
 
 %calc pp, I
 
-outvar(3) = speciesBal(pp, rates, n_tot_flow, phi);
+outvar(3) = speciesBal(rates, phi);
 
 %Sum pp
 
