@@ -45,4 +45,6 @@ M = [ 1     0     0     0     0     0     0     0     0     0     0     0     0 
 options = odeset('Mass',M);
 [ v, ysoln ] = ode45(handleranon,vspan,y0,options);
 
+plotdata();
+
 
