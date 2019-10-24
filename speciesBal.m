@@ -1,5 +1,5 @@
-function speciesBal = speciesBal(P, rates, n_tot_flow, phi)
-R = 
+function speciesBal = speciesBal(rates, phi)
+
 dF1dVt = (-1*rates(1) - 1*rates(3)) * (1-phi);
 dF2dVt = (-2*rates(1) - 1*rates(2) + 4*rates(4)) * (1-phi);
 dF3dVt = (-0.5*rates(2) - 3*rates(3) + rates(4)) * (1-phi);
