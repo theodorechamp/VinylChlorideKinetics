@@ -25,7 +25,7 @@ disp(int2str(nflowTot) + "  = 300");
 %calculate mol fractions
 molFracs = [0,0,0,0,0,0,0,0];
 for i = 1:Length(molFracs) 
-    molFracs(i) = nflow(i)/nflowTot;
+    molFracs(i) = y(i)/nflowTot;
 end
 
 %calculate partial pressures with Daltons law
@@ -41,6 +41,7 @@ outvar(2) = energyBal(Htot, rates, T, molFracs, Cp, dV);
 
 outvar(3) = speciesBal(rates, phi);
 
+nflow = [nflowc2h4, nflowhcl,nflowo2,nflowc2h3cl3,nflowco2,nflowcl2,nflowc2h4cl2,nflowh2o];
 outvar(4) = ergun(T,pp, MW, nflow); %nflow needs to be changed 
 
 end
