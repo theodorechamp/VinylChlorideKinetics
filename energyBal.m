@@ -7,7 +7,7 @@ for i = 1:Length(rates)
 end
 
 %Params
-U = 100; %Dummy Value
+U = 300; %Given in problem statement.
 D = .0245;
 Tinf = 298; %Dummy Value, 25C
 
