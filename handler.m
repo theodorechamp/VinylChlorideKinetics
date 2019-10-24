@@ -41,6 +41,6 @@ outvar(2) = energyBal(Htot, rates, T, molFracs, Cp, dV);
 
 outvar(3) = speciesBal(rates, phi);
 
-outvar(4) = ergun(T,pp, MW, nflow);
+outvar(4) = ergun(T,pp, MW, nflow); %nflow needs to be changed 
 
 end
