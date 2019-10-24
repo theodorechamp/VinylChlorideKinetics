@@ -13,7 +13,7 @@ Cp = {3.41e4, 1.67e4, 5.71e4, 6.34e4, 1.89e4, 1.57e4, 1.92e4, 2.39e4}; % average
 Vr = 1.414*10^-3;%m3
 Lr = 3; % m
 nflowinit = {100,100,100,0,0,0,0,0}; %Same indices as pp
-
+phi = .4;
 
 %%%%%%%%%
 % Logic %
@@ -23,7 +23,7 @@ vspan = linspace(0, Vr, 200);
 %Loading Dependent variables
 y = {nflowinit,Tin,Pin};
 
-handleranon = @(v,y) handler(v,y,
+handleranon = @(v,y) handler(v,y,rates,phi);
     
 
 
