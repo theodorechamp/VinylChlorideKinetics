@@ -1,9 +1,10 @@
-function outvar = handler(v, y, rates, phi)
+function outvar = handler(v, y, rates, phi, MW)
 
 %unpacking y
 nflow = y(1);
 T = y(2);
 P_t = y(3);
+
 
 %Check with Matt if mol flowrates or just mol comps should be used.
 %calculate total mole flow
@@ -31,6 +32,6 @@ outvar(2) = energyBal(Htot, rates, T, molFracs, Cp, dV);
 
 outvar(3) = speciesBal(rates, phi);
 
-outvar(4) = ergun(T,P_t);
+outvar(4) = ergun(T,P_t, MW, nflow);
 
 end
